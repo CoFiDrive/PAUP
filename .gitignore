@@ -1,0 +1,37 @@
+# Training artifacts and private data
+external_paths/
+data/
+datasets/
+weights/
+checkpoints/
+runs/
+outputs/
+results/
+logs/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.bin
+*.pkl
+*.npy
+*.npz
+*.bag
+*.pcd
+*.ply
+*.tfevents.*
+# Credentials, host settings, build products
+.env*
+*_local.yaml
+*_local.yml
+*.pem
+*.key
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.venv/
+build/
+dist/
+.DS_Store

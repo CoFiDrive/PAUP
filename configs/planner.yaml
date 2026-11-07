@@ -1,0 +1,17 @@
+stage: planner
+backend:
+  factory: paup.backends.cached:create_task
+  train_manifest: external_paths/features/train/manifest.json
+  validation_manifest: external_paths/features/validation/manifest.json
+  feature_channels: 128
+training:
+  epochs: 50
+  batch_size: 4
+  workers: 4
+  optimizer: AdamW
+  learning_rate: 0.0002
+  weight_decay: 0.0005
+  min_learning_rate: 0.000001
+  clip_grad: 10.0
+  seed: 42
+  output: runs/planner

@@ -1,0 +1,28 @@
+# Algorithm defaults, no fitted calibration or pretrained parameters.
+communication:
+  threshold: 0.05
+  smooth_size: 5
+  smooth_sigma: 1.0
+uncertainty:
+  mode: planning_aware
+  weight: 1.0
+  max_sigma_px: 12.0
+  calibration_path: external_paths/calibration/aoi_sigma.json
+selection:
+  request_max_age_ms: 600.0
+  waypoint_interval_ms: 200.0
+  age_tau_ms: 800.0
+  drift_weight: 2.0
+  foreground_threshold: 0.1
+  extra_fraction: 0.25
+  extra_min_cells: 4
+  extra_max_cells: 32
+prediction:
+  max_forecast_steps: 4
+channel:
+  mode: fixed
+  delay_ms: 200.0
+  loss_rate: 0.0
+  send_rate_hz: 10.0
+  history_frame_ms: 200.0
+  max_aoi_ms: 800.0

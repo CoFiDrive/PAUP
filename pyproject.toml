@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paup-training"
+version = "0.1.0"
+description = "Planning-Aware Uncertainty Propagation: training-only source release"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [{name = "PAUP contributors"}]
+dependencies = ["torch>=1.13", "numpy>=1.23", "scipy>=1.9", "PyYAML>=6"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+paup-train = "paup.train:main"
+paup-calibrate = "paup.calibration:main"
+
+[project.urls]
+Repository = "https://github.com/CoFiDrive/PAUP"
+
+[tool.setuptools.packages.find]
+where = ["src"]

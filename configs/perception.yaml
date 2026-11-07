@@ -1,0 +1,20 @@
+stage: perception
+backend:
+  factory: paup.backends.perception:create_task
+  package_roots:
+    - external_paths/backend
+    - external_paths/utilities
+  architecture_config: external_paths/perception_architecture.yaml
+  train_root: external_paths/dataset/train
+  validation_root: external_paths/dataset/validation
+training:
+  epochs: 160
+  batch_size: 1
+  workers: 4
+  optimizer: Adam
+  learning_rate: 0.002
+  weight_decay: 0.0001
+  min_learning_rate: 0.000001
+  clip_grad: 10.0
+  seed: 42
+  output: runs/perception
