@@ -1,6 +1,6 @@
 # PAUP
 
-**Planning-Aware Uncertainty Propagation** — training-only source release.
+**Planning-Aware Uncertainty Propagation**.
 
 PAUP uses information age and an aligned prior plan to extend communication
 selection around predictive perception responses. A consistency gate and a
@@ -17,11 +17,7 @@ baseline selection. The PAUP operator itself adds no learned parameters.
   window-local planner fine-tuning interfaces.
 - Optimizer / scheduler / checkpoint handling and CPU tests.
 
-This repository contains source code and configuration templates only.
-Pretrained weights, local calibration outputs, datasets, analysis scripts,
-experimental plots, simulator evaluation campaigns and private machine settings
-are not included. Backend implementations with separate redistribution terms
-are installed independently; their attribution is retained in [NOTICE.md](NOTICE.md).
+This repository contains source code and configuration templates.
 
 ## Install
 
